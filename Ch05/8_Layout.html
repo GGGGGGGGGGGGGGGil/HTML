@@ -2,58 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>6_Layout</title>
+    <title>8_Layout</title>
     <style>
 
         * {
-            margin: 0;
             padding: 0;
+            margin: 0;
         }
 
         #wapper {
             width: 860px;
             height: auto;
-            background: #aaaaaa;
+            background-color: #aaa;
             margin: 10px auto;
             padding: 10px;
             box-sizing: border-box;
         }
 
         header {
-            width: 840px;
+            position: relative;
+            width: 100%;
             height: 120px;
-            background: #cccccc;
+            padding: 10px;
+            background-color: #ccc;
+            box-sizing: border-box;
         }
-        
+
+        header > nav {
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+            width: 820px;
+            height: 60px;
+            background-color: #eee;
+        }
+
         main {
             width: 100%;
             height: auto;
             margin: 10px 0;
+            background-color: #ccc;
             padding: 10px;
             box-sizing: border-box;
-            background: #cccccc;
             overflow: hidden;
         }
 
-        main > aside {
+        main > aside:nth-of-type(1) {
             float: left;
             width: 200px;
             height: 400px;
-            background: #eeeeee;
-            margin-right: 10px;
+            background-color: #eee;
+        }
+
+        main > aside:nth-of-type(2) {
+            float: right;
+            width: 200px;
+            height: 400px;
+            background-color: #eee;
         }
 
         main > section {
             float: left;
             width: 400px;
             height: 400px;
-            background: #eeeeee;
+            background-color: #eee;
+            margin-left: 10px;
         }
 
         footer {
             width: 100%;
             height: 100px;
-            background: #cccccc;
+            background-color: #ccc;
         }
 
     </style>
@@ -62,6 +81,9 @@
     <div id="wapper">
         <header>
             <h3>Header</h3>
+            <nav>
+                <h3>Nav</h3>
+            </nav>
         </header>
         <main>
             <h3>Main</h3>
