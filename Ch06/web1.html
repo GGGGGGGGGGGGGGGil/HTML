@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font: normal 12px '고딕';
+        }
+
+        a {text-decoration: none; color: #fff;}
+        
+        #wapper {
+            width: 800px;
+            height: auto;
+            border: 1px solid red;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+        
+        header {
+            position: relative;
+            width: 100%;
+            height: 92px;
+            background: #2d3a4b;
+        }
+        
+        header > a {}
+        header .logo {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        header > p {
+            float: right;
+            margin-top: 6px;    
+            margin-right: 10px; 
+        }
+
+        header > p > a {font-size: 10px;}
+        header > p > a:hover {color: #777;}
+
+        header > ul {
+            position: absolute;
+            list-style: none;
+            right: 60px;
+            bottom: 24px;
+            /* border: 1px solid yellow; */
+            width: 500px;
+            height: 26px;
+        }
+        
+        header > ul > li {
+            float: left;
+            width: 20%;
+            height: 100%;
+            /* border: 1px solid green; */
+            box-sizing: border-box;
+        }
+        header > ul > li > a {font-size: 14px;}
+        header > ul > li > a:hover {color: #777;}
+
+        main {
+            width: 100%;
+            height: 420px;
+            box-sizing: border-box;
+        }
+
+        main > section {
+            overflow: hidden;
+        }
+        
+        main > div >article {
+            float: left;
+            width: 50%;
+            height: 100px;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        footer {
+            width: 100%;
+            height: 90px;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wapper">
+        <header>
+            <a href="#"><img src="./img/logo.png" alt="로고" class="logo"></a>
+            <p>
+                <a href="#">HOME |</a>
+                <a href="#">LOGIN |</a>
+                <a href="#">JOIN |</a>
+                <a href="#">NOTICE</a>
+            </p>
+
+            <UL>
+                <li><a href="#">COMPANT</a></li>
+                <li><a href="#">PRODUCT</a></li>
+                <li><a href="#">CUSTOMER</a></li>
+                <li><a href="#">SERVICE</a></li>
+                <li><a href="#">RECRUIT</a></li>
+            </UL>
+        </header>
+        <main>
+            <section>
+                <img src="./img/main_img.png" alt="메인" class="main">
+            </section>
+            <div class="banner">
+                <article>
+                    <a href="#"><img src="./img/banner1.png" alt="배너1"></a>
+                </article>
+                <article>
+                    <a href="#"><img src="./img/banner2.png" alt="배너2"></a>
+                </article>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+</html>
