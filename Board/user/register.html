@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div id="wapper">
+    <div id="wrapper">
         <header>
             <h3>Board System v1.0</h3>
         </header>
@@ -19,14 +19,15 @@
                             <td>아이디</td>
                             <td>
                                 <input type="text" name="uid" placeholder="아이디 입력">
-                                <button><img src="../img/chk_id.gif" alt></button>
-                                <span class="resultId"></span>
+                                <button type="button"><img src="../img/chk_id.gif" alt></button>
+                                <span class="resultUid"></span>
                             </td>
                         </tr>
                         <tr>
                             <td>비밀번호</td>
                             <td>
                                 <input type="password" name="pass1" placeholder="비밀번호 입력">
+                                <span class="resultPass"></span>
                             </td>
                         </tr>
                         <tr>
@@ -40,13 +41,16 @@
                         <caption>개인정보 입력</caption>
                         <tr>
                             <td>이름</td>
-                            <td><input type="text" name="name" placeholder="이름 입력"></td>
+                            <td>
+                                <input type="text" name="name" placeholder="이름 입력">
+                            </td>
                         </tr>
                         <tr>
                             <td>별명</td>
                             <td>
                                 <p>공백없이 한글, 영문, 숫자만 입력가능</p>
                                 <input type="text" name="nick" placeholder="별명 입력">
+                                <button type="button"><img src="../img/chk_id.gif" alt="중복확인"></button>
                                 <span class="resultNick"></span>
                             </td>
                         </tr>
@@ -56,14 +60,16 @@
                         </tr>
                         <tr>
                             <td>휴대폰</td>
-                            <td><input type="text" name="hp" placeholder="- 포함 13자리 입력" minlength="13" maxlength="13"></td>
+                            <td>
+                                <input type="text" name="hp" placeholder="- 포함 13자리 입력" minlength="13" maxlength="13">
+                            </td>
                         </tr>
                         <tr>
                             <td>주소</td>
                             <td>
                                 <div>
                                     <input type="text" name="zip" placeholder="우편번호" readonly>
-                                    <button class="btnZip">
+                                    <button class="btnZip" type="button">
                                         <img src="../img/chk_post.gif" alt="우편번호">
                                     </button>
                                 </div>
